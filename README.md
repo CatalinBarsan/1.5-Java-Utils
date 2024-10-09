@@ -24,11 +24,11 @@ This project consists of several exercises that work with file and directory man
 
 1. Clone the repository to your local machine using the command:
    ```bash
-   git clone <https://github.com/CatalinBarsan/1.5-Java-Utils.git>
+   git clone https://github.com/CatalinBarsan/1.5-Java-Utils.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd <src/main/resources/Directory01>
+   cd src/main/resources/Directory01
    ```
 3. If using Maven, run the following command to download dependencies:
    ```bash
