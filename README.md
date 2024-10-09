@@ -1,83 +1,79 @@
-Aquí tienes el contenido completo del archivo `README.md`, incluyendo todos los apartados que mencionaste:
+# 📄 Description
 
+This project consists of several exercises that work with file and directory manipulation in Java. The exercises are as follows:
 
-# 📄 Descripción
+- **Exercise 1:** Create a class that lists the contents of a directory received as a parameter in alphabetical order.
+- **Exercise 2:** Add to the previous class the functionality to list a directory tree with the content of all its levels (recursively) so that it is printed on the screen in alphabetical order within each level, also indicating if it is a directory (D) or a file (F), and its last modification date.
+- **Exercise 3:** Modify the previous exercise. Now, instead of displaying the result on the screen, save the output to a TXT file.
+- **Exercise 4:** Add functionality to read any TXT file and display its content on the console.
+- **Exercise 5:** The program must now serialize a Java object to a `.ser` file and then deserialize it.
 
-Este proyecto se compone de varios ejercicios que permiten trabajar con la manipulación de archivos y directorios en Java. Los ejercicios son los siguientes:
-
-- **Ejercicio 1:** Crea una clase que liste alfabéticamente el contenido de un directorio recibido por parámetro.
-- **Ejercicio 2:** Añade a la clase del ejercicio anterior, la funcionalidad de listar un árbol de directorios con el contenido de todos sus niveles (recursivamente) de forma que se impriman en pantalla en orden alfabético dentro de cada nivel, indicando además si es un directorio (D) o un archivo (F), y su última fecha de modificación.
-- **Ejercicio 3:** Modifica el ejercicio anterior. Ahora, en lugar de mostrar el resultado por la pantalla, guarda el resultado en un archivo TXT.
-- **Ejercicio 4:** Añade la funcionalidad de leer cualquier archivo TXT y muestra su contenido por consola.
-- **Ejercicio 5:** Ahora el programa debe serializar un Objeto Java a un archivo .ser y después debe deserializarlo.
-
-## 💻 Tecnologías Utilizadas
+## 💻 Technologies Used
 
 - Java JDK 22
 - IntelliJ IDEA
 - Maven
 
-## 📋 Requisitos
+## 📋 Requirements
 
-- JDK 22 o superior instalado.
-- IntelliJ IDEA o cualquier otro IDE compatible con Java.
-- Dependencias de Maven configuradas.
+- JDK 22 or higher installed.
+- IntelliJ IDEA or any other Java-compatible IDE.
+- Maven dependencies configured.
 
-## 🛠️ Instalación
+## 🛠️ Installation
 
-1. Clona el repositorio en tu máquina local usando el comando:
+1. Clone the repository to your local machine using the command:
    ```bash
    git clone <https://github.com/CatalinBarsan/1.5-Java-Utils.git>
    ```
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
    ```bash
    cd <src/main/resources/Directory01>
    ```
-3. Si estás usando Maven, ejecuta el siguiente comando para descargar las dependencias:
+3. If using Maven, run the following command to download dependencies:
    ```bash
    mvn install
    ```
 
-## ▶️ Ejecución
+## ▶️ Execution
 
-Para ejecutar los ejercicios, sigue estos pasos:
+To execute the exercises, follow these steps:
 
-1. Abre el proyecto en tu IDE.
-2. Configura los argumentos de línea de comandos según sea necesario.
-3. Ejecuta la clase principal de cada ejercicio.
+1. Open the project in your IDE.
+2. Set up the necessary command-line arguments.
+3. Run the main class for each exercise.
 
-Por ejemplo, para el ejercicio 5, asegúrate de pasar la ruta del archivo .ser como argumento.
+For example, for Exercise 5, ensure you pass the `.ser` file path as an argument.
 
-## 🌐 Despliegue
+## 🌐 Deployment
 
-Para desplegar el proyecto en un entorno de producción, sigue estos pasos:
+To deploy the project in a production environment, follow these steps:
 
-1. Asegúrate de que todas las dependencias estén correctamente instaladas.
-2. Compila el proyecto usando:
+1. Ensure all dependencies are correctly installed.
+2. Compile the project using:
    ```bash
    mvn clean package
    ```
-3. Copia el archivo JAR resultante al servidor de producción y ejecútalo con:
+3. Copy the resulting JAR file to the production server and run it with:
    ```bash
-   java -jar <nombre del archivo>.jar
+   java -jar <file-name>.jar
    ```
 
-## 🤝 Contribuciones
+## 🤝 Contributions
 
-Si deseas contribuir a este proyecto, sigue estos pasos:
+If you want to contribute to this project, follow these steps:
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tus cambios:
+1. Fork the repository.
+2. Create a new branch for your changes:
    ```bash
-   git checkout -b mi-nueva-caracteristica
+   git checkout -b my-new-feature
    ```
-3. Realiza tus cambios y haz commit:
+3. Make your changes and commit:
    ```bash
-   git commit -m 'Añadí una nueva característica'
+   git commit -m 'Added a new feature'
    ```
-4. Envía tu rama al repositorio remoto:
+4. Push your branch to the remote repository:
    ```bash
-   git push origin mi-nueva-caracteristica
+   git push origin my-new-feature
    ```
-5. Crea un Pull Request para que se revisen tus cambios.
-```
+5. Create a Pull Request to have your changes reviewed.
