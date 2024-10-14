@@ -1,4 +1,5 @@
 package org.example.exercise03;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -21,6 +22,7 @@ public class DirectoryTreeToFile {
                     }
                     if (file.isDirectory()) {
                         writer.write("(D) " + file.getName() + " - Last modified: " + sdf.format(file.lastModified()) + "\n");
+                        // Recursive call for subdirectories
                         saveDirectoryTree(file.getAbsolutePath(), outputFilePath, level + 1, writer);
                     } else {
                         writer.write("(F) " + file.getName() + " - Last modified: " + sdf.format(file.lastModified()) + "\n");
@@ -31,19 +33,7 @@ public class DirectoryTreeToFile {
             writer.write("The provided path is not a directory.\n");
         }
     }
-
-    public static void main(String[] args) {
-        if (args.length > 1) {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(args[1]))) {
-                saveDirectoryTree(args[0], args[1], 0, writer);
-                System.out.println("Directory tree saved to " + args[1]);
-            } catch (IOException e) {
-                System.out.println("An error occurred while saving the file: " + e.getMessage());
-            }
-        } else {
-            System.out.println("Please provide both a directory path and an output file path.");
-        }
-    }
 }
+
 
 

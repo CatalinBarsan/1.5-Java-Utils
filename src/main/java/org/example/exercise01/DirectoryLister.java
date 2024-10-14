@@ -5,7 +5,9 @@ import java.net.URISyntaxException;
 import java.util.Arrays;
 
 public class DirectoryLister {
+
     public void listDirectoryContents(String directoryPath) {
+        System.out.println("Checking path: " + directoryPath);
         File directory = new File(directoryPath);
         if (directory.isDirectory()) {
             String[] contents = directory.list();

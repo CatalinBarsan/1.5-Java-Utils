@@ -2,6 +2,7 @@ package org.example.exercise05;
 
 import java.io.*;
 
+// Define a Book class that implements Serializable
 class Book implements Serializable {
     private String title;
     private String author;
@@ -29,6 +30,7 @@ class Book implements Serializable {
 }
 
 public class ObjectSerializationExample {
+    // Method to serialize a Book object
     public static void serializeObject(Book book, String filePath) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filePath))) {
             oos.writeObject(book);
@@ -38,6 +40,7 @@ public class ObjectSerializationExample {
         }
     }
 
+    // Method to deserialize a Book object
     public static void deserializeObject(String filePath) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath))) {
             Book book = (Book) ois.readObject();
@@ -51,11 +54,12 @@ public class ObjectSerializationExample {
         if (args.length > 0) {
             String filePath = args[0];
             Book book = new Book("1984", "George Orwell");
-            serializeObject(book, filePath);
-            deserializeObject(filePath);
+            serializeObject(book, filePath); // Serialize the book
+            deserializeObject(filePath);      // Deserialize the book
         } else {
             System.out.println("Please provide a file path for serialization.");
         }
     }
 }
+
 

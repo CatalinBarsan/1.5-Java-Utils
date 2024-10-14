@@ -39,11 +39,109 @@ This project consists of several exercises that work with file and directory man
 
 To execute the exercises, follow these steps:
 
-1. Open the project in your IDE.
-2. Set up the necessary command-line arguments.
-3. Run the main class for each exercise.
+- **Exercise 1:**
 
-For example, for Exercise 5, ensure you pass the `.ser` file path as an argument.
+Navigate to the source folder:
+
+Open a terminal/command prompt and navigate to the src/main/java directory where the Java source files are located.
+
+Compile the Java files:
+
+Run the following command to compile all the Java files:
+
+```bash
+javac org/example/exercise01/*.java
+  ```
+
+Execution
+After successful compilation, execute the program using the following command:
+
+```bash
+java org.example.exercise01.Main "../resources/Directory01"
+```
+
+- **Exercise 2:**
+
+Navigate to the source folder:
+
+Open a terminal/command prompt and navigate to the src/main/java directory where the Java source files are located.
+
+Compile the Java files:
+
+Run the following command to compile all the Java files:
+
+```bash
+javac org/example/exercise02/*.java
+  ```
+
+Execution
+After successful compilation, execute the program using the following command:
+
+```bash
+java org.example.exercise02.Main "../resources/Directory01"
+```
+
+- **Exercise 3:**
+
+Navigate to the source folder:
+
+Open a terminal/command prompt and navigate to the src/main/java directory where the Java source files are located.
+
+Compile the Java files:
+
+Run the following command to compile all the Java files:
+
+```bash
+javac org/example/exercise02/*.java
+  ```
+
+Execution
+After successful compilation, execute the program using the following command:
+
+```bash
+java org.example.exercise03.Main "../resources/Directory01" "output.txt"
+```
+
+- **Exercise 4:**
+
+Navigate to the source folder:
+
+Open a terminal/command prompt and navigate to the src/main/java directory where the Java source files are located.
+
+Compile the Java files:
+
+Run the following command to compile all the Java files:
+
+```bash
+javac org/example/exercise04/*.java
+  ```
+
+Execution
+After successful compilation, execute the program using the following command:
+
+```bash
+java org.example.exercise02.Main "../resources/Directory01/archivo1" 
+```
+- **Exercise 5:**
+
+Navigate to the source folder:
+
+Open a terminal/command prompt and navigate to the src/main/java directory where the Java source files are located.
+
+Compile the Java files:
+
+Run the following command to compile all the Java files:
+
+```bash
+javac org/example/exercise05/ObjectSerializationExample.java
+  ```
+
+Execution
+After successful compilation, execute the program using the following command:
+
+```bash
+java org.example.exercise05.ObjectSerializationExample "../resources/book.ser"
+```
 
 ## 🌐 Deployment
 

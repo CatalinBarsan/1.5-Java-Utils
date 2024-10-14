@@ -1,21 +1,23 @@
 package org.example.exercise02;
 
 import java.io.File;
-import java.net.URISyntaxException;
 
 public class Main {
 
     public static void main(String[] args) {
+        // Comprobar si se ha pasado un argumento
+        if (args.length == 0) {
+            System.out.println("Please provide a directory path as an argument.");
+            return;
+        }
+
         RecursiveDirectoryLister rcs = new RecursiveDirectoryLister();
 
-        try {
-            File resourceDirectory = new File(RecursiveDirectoryLister.class.getClassLoader().getResource("Directory01").toURI());
-            rcs.listDirectoryTree(resourceDirectory.getAbsolutePath(), 0);
-        } catch (NullPointerException e) {
-            System.out.println("Directory 'Directory01' not found in resources.");
-        } catch (URISyntaxException e) {
-            System.out.println("Error converting resource URL to URI: " + e.getMessage());
-        }
-    }
+        // Tomar el primer argumento como la ruta del directorio
+        String directoryPath = args[0];
 
+        // Llamar al método para listar el árbol de directorios
+        rcs.listDirectoryTree(directoryPath, 0);
+    }
 }
+
