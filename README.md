@@ -133,7 +133,7 @@ Compile the Java files:
 Run the following command to compile all the Java files:
 
 ```bash
-javac org/example/exercise05/ObjectSerializationExample.java
+java org.example.exercise05.Main "../resources/book.ser"     
   ```
 
 Execution
