@@ -6,23 +6,27 @@ import java.util.Arrays;
 
 public class DirectoryLister {
 
+    // Method to list the contents of a directory
     public void listDirectoryContents(String directoryPath) {
         System.out.println("Checking path: " + directoryPath);
         File directory = new File(directoryPath);
         if (directory.isDirectory()) {
             String[] contents = directory.list();
             if (contents != null) {
-                Arrays.sort(contents);
+                Arrays.sort(contents); // Sort the contents alphabetically
                 for (String item : contents) {
                     System.out.println(item);
                 }
+            } else {
+                System.out.println("The directory is empty.");
             }
         } else {
             System.out.println("The provided path is not a directory.");
         }
     }
 
-    public void start() throws URISyntaxException {
+    // Method to start the directory listing process
+    public void start() {
         try {
             File resourceDirectory = new File(DirectoryLister.class.getClassLoader().getResource("Directory01").toURI());
             listDirectoryContents(resourceDirectory.getAbsolutePath());
@@ -33,6 +37,7 @@ public class DirectoryLister {
         }
     }
 }
+
 
 
 
