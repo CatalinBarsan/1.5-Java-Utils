@@ -17,13 +17,6 @@ public class FileReaderExample {
         }
     }
 
-    public static void main(String[] args) {
-        if (args.length > 0) {
-            readFile(args[0]);  // Call readFile with the provided file path
-        } else {
-            System.out.println("Please provide a file path.");  // Prompt if no arguments are given
-        }
-    }
 }
 
 
